@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+html,body {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 500px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    font-size: 1.4rem;
+    cursor:pointer;
+}
+
+.container {
+    width: 1200px;
+    max-width: 98%;
+    margin: 0 auto;
+}
+
+/* header */
+
+header .container .wrapper {
+    color: rgb(83, 83, 83);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .wrapper i {
+    margin-right: 1.2rem;  
+    transition: all ease-in-out 250ms;
+}
+
+header .container .wrapper i:hover {
+    color: black;
+}
+
+header .container .title {
+    text-transform: uppercase;
+    color: rgb(27, 27, 27);
+    margin: 20px;
+}
+
+header .container .links a {
+    text-transform: uppercase;
+    margin-right: .8rem;
+    color:black;
+    font-weight: 700;
+    transition: all ease-in-out 300ms;
+}
+
+header .container .links a:hover {
+    color: rgb(241, 172, 42);
+}
+
+header .sub-header {
+    background-color: rgb(97, 95, 95);
+    padding: .8rem;
+}
+
+
+/* banner */
+#banner .cover {
+    width: 100vw;
+    height: 90vh;
+    background-image: url(../img/image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+#banner .cover .overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, .6);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+#banner .cover .overlay .info {
+    color: white;
+    width: 600px;
+    max-width: 90%;
+    margin-left: 40px;
+}
+
+#banner .cover .overlay .info h1 {
+    text-transform: capitalize;
+}
+
+#banner .cover .overlay .info .btn {
+    width: 200px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: all ease-in-out 500ms;
+    border: 3px solid orange;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+#banner .cover .overlay .info .btn:hover {
+    background-color: transparent;
+}
+
+
+
+@media(max-width:570px){
+    header .sub-header {
+        display: none;
+    }
+    header .container .title {
+        font-size: 1.5rem;
+    }
+    #banner .cover .overlay .info h1 {
+        font-size: 1.5rem;
+    }
+    #banner .cover .overlay .info {
+        margin-left: 20px;
+    }
+    #banner .cover .overlay .info .btn {
+        width: 150px;
+        padding: .8rem;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:340px) {
+    header .container .wrapper i {
+        margin-right: .6rem;
+    }
+    header .container .title {
+        font-size: 1.2rem;
+        margin: 8px;
+    }
+    i {
+        font-size: 1rem;
+    }
+}
